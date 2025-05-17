@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Daniel 
-middle_name: 
+middle_name: R.
 last_name: Paul
 contact_note: >
   Feel free to contact me at danielpaul1221@gmail.com
@@ -193,11 +193,6 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
-  - _news/announcement_*.md
-  - _pages/blog.md
-  - _projects/?_project.md
-
-  
 keep_files:
   - CNAME
   - .nojekyll
