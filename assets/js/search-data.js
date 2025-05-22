@@ -21,13 +21,6 @@ ninja.data = [{
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/books/";
-              },
-            },{id: "dropdown-blog",
-              title: "blog",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
                 window.location.href = "/blog/";
               },
             },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
