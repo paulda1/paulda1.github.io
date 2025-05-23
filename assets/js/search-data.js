@@ -16,15 +16,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-week-1",
+        },{id: "post-gsoc-week-1-ft8-research-and-technical-preparation",
         
-          title: "Week_1",
+          title: "Gsoc week 1: ft8 research and technical preparation",
         
         description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/week_1/";
+            window.location.href = "/blog/2025/GSoC-Week-1-FT8-Research-and-Technical-Preparation/";
           
         },
       },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
