@@ -26,9 +26,6 @@ pagination:
         <p class="post-meta">
           {{ latest_post.date | date: '%B %d, %Y' }}
           {% if latest_post.author %}by {{ latest_post.author }}{% endif %}
-          {% if latest_post.external_source %}
-            &nbsp; &middot; &nbsp; {{ latest_post.external_source }}
-          {% endif %}
         </p>
       </header>
       
