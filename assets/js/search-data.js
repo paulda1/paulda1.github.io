@@ -27,9 +27,9 @@ ninja.data = [{
             window.location.href = "/blog/2025/GSoC-Week-2-FT8-Encoder-Block-Development/";
           
         },
-      },{id: "post-gsoc-week-1-ft8-research-and-technical-preparation",
+      },{id: "post-gsoc-week-1-ft8-research-and-technical-prep",
         
-          title: "Gsoc week 1: ft8 research and technical preparation",
+          title: "GSoC Week 1: FT8 Research and Technical Prep",
         
         description: "",
         section: "Posts",
