@@ -1,3 +1,7 @@
+---
+title: "GSoC Week 2: FT8 Encoder Block Development"
+---
+
 Hello? Hello.
 Can you hear me?
 Yep pretty well…can you hear me?
