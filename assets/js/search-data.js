@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "post-gsoc-week-2-ft8-encoder-block-development",
         
-          title: "Gsoc week 2: ft8 encoder block development",
+          title: "GSoC Week 2: FT8 Encoder Block Development",
         
         description: "",
         section: "Posts",
@@ -35,7 +35,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/0025/GSoC-Week-1-FT8-Research-and-Technical-Preparation/";
+            window.location.href = "/blog/2025/GSoC-Week-1-FT8-Research-and-Technical-Preparation/";
           
         },
       },{
