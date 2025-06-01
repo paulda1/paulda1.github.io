@@ -17,23 +17,22 @@ pagination:
 ---
 
 <div class="post">
-  {% assign latest_post = site.posts.first %}
-  
-  {% if latest_post %}
+  {% for post in paginator.posts %}
     <article class="post-content">
       <header class="post-header">
-        <h1 class="post-title">{{ latest_post.title }}</h1>
+        <h1 class="post-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h1>
         <p class="post-meta">
-          {{ latest_post.date | date: '%B %d, %Y' }}
-          {% if latest_post.author %}by {{ latest_post.author }}{% endif %}
+          {{ post.date | date: '%B %d, %Y' }}
+          {% if post.author %}by {{ post.author }}{% endif %}
         </p>
       </header>
       
       <div class="markdown-content">
-        {{ latest_post.content }}
+        {{ post.excerpt }}
+        <a href="{{ post.url | relative_url }}">Read more...</a>
       </div>
     </article>
-  {% else %}
-    <p>No blog posts found.</p>
-  {% endif %}
+  {% endfor %}
 </div>
