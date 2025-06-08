@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-gsoc-week-2-ft8-encoder-block-development",
+        },{id: "post-gsoc-week-3-ft8-encoder-block-development-pt2",
+        
+          title: "GSoC Week 3: FT8 Encoder Block Development Pt2",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/GSoC-Week-3-FT8-Encoder-Block-Development-Pt2/";
+          
+        },
+      },{id: "post-gsoc-week-2-ft8-encoder-block-development",
         
           title: "GSoC Week 2: FT8 Encoder Block Development",
         
