@@ -16,9 +16,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-gsoc-week-3-ft8-encoder-block-development-pt3",
+        },{id: "post-gsoc-week-4-ft8-encoder-block-development-pt3",
         
-          title: "GSoC Week 3: FT8 Encoder Block Development Pt3",
+          title: "GSoC Week 4: FT8 Encoder Block Development Pt3",
         
         description: "",
         section: "Posts",
