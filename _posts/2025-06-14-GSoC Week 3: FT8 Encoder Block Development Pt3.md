@@ -1,5 +1,5 @@
 ---
-title: "GSoC Week 3: FT8 Encoder Block Development Pt3"
+title: "GSoC Week 4: FT8 Encoder Block Development Pt3"
 ---
 
 Users know what they are doing 
