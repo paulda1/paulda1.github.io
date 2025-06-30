@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-gsoc-week-4-ft8-bit-fields",
+        },{id: "post-",
+        
+          title: "",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/2025-06-28-GSoC-Week-5-Algorithmic-thinking/";
+          
+        },
+      },{id: "post-gsoc-week-4-ft8-bit-fields",
         
           title: "GSoC Week 4: FT8 Bit Fields",
         
