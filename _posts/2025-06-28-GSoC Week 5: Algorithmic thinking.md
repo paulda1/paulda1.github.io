@@ -1,5 +1,5 @@
 ---
-title: "GSoC Week 5: Algorithmic Thinking
+title: "GSoC Week 5: Algorithmic Thinking"
 ---
 
 As we’d previously mentioned the message.cc file contains the entirety of the message type detection logic. And then this object is passed into the ft8_encoder class to handle encoding which each have different encoding rules and bit field structures. 
