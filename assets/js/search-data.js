@@ -16,15 +16,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-",
+        },{id: "post-gsoc-week-5-algorithmic-thinking",
         
-          title: "",
+          title: "GSoC Week 5: Algorithmic Thinking",
         
         description: "",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/2025-06-28-GSoC-Week-5-Algorithmic-thinking/";
+            window.location.href = "/blog/2025/GSoC-Week-5-Algorithmic-thinking/";
           
         },
       },{id: "post-gsoc-week-4-ft8-bit-fields",
