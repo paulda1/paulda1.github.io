@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-gsoc-week-5-algorithmic-thinking",
+        },{id: "post-gsoc-week-6-bitwise-manipulations",
+        
+          title: "Gsoc week 6: bitwise manipulations",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/GSoC-Week-6-Bitwise-Manipulations/";
+          
+        },
+      },{id: "post-gsoc-week-5-algorithmic-thinking",
         
           title: "GSoC Week 5: Algorithmic Thinking",
         
