@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "post-gsoc-week-6-bitwise-manipulations",
         
-          title: "Gsoc week 6: bitwise manipulations",
+          title: "GSoC Week 6: Bitwise Manipulations",
         
         description: "",
         section: "Posts",
