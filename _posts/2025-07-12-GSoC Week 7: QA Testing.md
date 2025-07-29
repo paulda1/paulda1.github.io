@@ -1,4 +1,4 @@
-This week I focused on building out QA tests for my FT8 encoder, let’s walk through what I’ve been validating.
+This week I focused on building out QA tests for my FT8 encoder and continuing to debug the errors I've been getting on that front, let’s walk through what I’ve been validating.
 
 First off we have the LDPC parity check, and this might have been the hardest part, if not for the fact I have the parity.dat values. FT8 relies on Low-Density Parity-Check codes and so I load the 83×174 parity check matrix from parity.dat, then run a codeword through it. The goal is simple:
 
