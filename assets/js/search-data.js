@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-gsoc-week-7-qa-testing",
+        },{id: "post-gsoc-week-8-all-message-types-and-debugging",
+        
+          title: "Gsoc week 8: all message types and debugging",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/GSoC-Week-8-All-message-types-and-debugging/";
+          
+        },
+      },{id: "post-gsoc-week-7-qa-testing",
         
           title: "Gsoc week 7: qa testing",
         
