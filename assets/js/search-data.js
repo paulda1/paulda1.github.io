@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-gsoc-week-8-all-message-types-and-debugging",
+        },{id: "post-gsoc-week-9-pybind11",
+        
+          title: "Gsoc week 9: pybind11",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/GSoC-Week-9-Pybind11/";
+          
+        },
+      },{id: "post-gsoc-week-8-all-message-types-and-debugging",
         
           title: "Gsoc week 8: all message types and debugging",
         
