@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-gsoc-week-10-pmts-and-pdus",
+        },{id: "post-gsoc-week-11-encoding-pipeline",
+        
+          title: "Gsoc week 11: encoding pipeline",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/GSoC-Week-11-Encoding-pipeline/";
+          
+        },
+      },{id: "post-gsoc-week-10-pmts-and-pdus",
         
           title: "Gsoc week 10: pmts and pdus",
         
