@@ -1,0 +1,22 @@
+This week I worked on understanding what PMTs and PDUs actually are and why my current approach is honestly just broken. Previously, I'd been treating GNU Radio like a kind C++ signal processing library where you just generate waveforms in constructors and call it a day. This felt reasonable initially but became a complete nightmare when trying to handle multiple messages.
+Now I understand the core issue: I've been fighting the architecture instead of working with it. GNU Radio has two distinct domains - synchronous stream processing and asynchronous message passing - and I was trying to force everything into the wrong one.
+Here's what PMTs (Polymorphic Types) actually solve:
+•	Type-safe data containers that work seamlessly between C++ and Python
+•	Built-in serialization for passing complex data between blocks
+•	Support for everything from simple integers to dictionaries and vectors
+•	Thread-safe immutability (except for vectors) that prevents race conditions
+•	Automatic type conversion so you don't have to worry about casting nightmares
+If the above seems a little too complex, the documentation is kind of amazing so I would recommend checking it out: https://wiki.gnuradio.org/index.php/Polymorphic_Types_(PMTs)
+
+The elegant part is how PMTs handle the language barrier. You can create a dictionary in Python with pmt.to_pmt({'freq': 14.230, 'power': 100}), pass it to C++, and extract the values using pmt::dict_ref() without any manual conversion headaches.
+PDUs (Protocol Data Units) are where this gets really useful. They're just PMT pairs containing metadata and uniform data vectors. More or less a dictionary of properties plus the actual payload. I’d think of them as packets that carry both "what this data means" and "here's the actual data."
+But here's the frustrating part: my current sync block approach violates what Wylie and Marcus called the "stream contract." I'm generating one waveform in the constructor, returning WORK_DONE, and killing the block. This completely breaks GNU Radio's expectation that stream blocks produce continuous data flows. The chunked copying is inefficient, the buffer management is wrong, and I can't reuse the block for multiple messages.
+So they suggested I restructure in a way that combats this:
+Block 1: Message generator that takes text payloads and produces PDUs containing frequency deviation sequences. This handles all the protocol encoding such as FT8 bit packing, LDPC encoding, symbol mapping then outputs the result as a PMT vector.
+Block 2: PDU-to-stream converter that receives these symbol PDUs and generates the actual transmit samples. This is where the asynchronous-to-synchronous transition happens, and where GNU Radio's existing infrastructure handles the buffer management. It should be straightforward with the existing implementation. 
+Block 3: Standard stream processing for filtering, amplification, and anything else I might need to do before sending stuff over. 
+So I’m basically going to be separating message arrival from message processing so that construction time is for one-time configuration (station callsign, grid square, etc.), while runtime processing happens in message handlers that can fire again and again. 
+Anyways I guess the real test will be putting these signals on the air and seeing if other stations can decode them.
+See you next week,
+Adeus
+
