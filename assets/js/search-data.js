@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-gsoc-week-9-pybind11",
+        },{id: "post-gsoc-week-10-pmts-and-pdus",
+        
+          title: "Gsoc week 10: pmts and pdus",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/GSoC-Week-10-PMTs-and-PDUs/";
+          
+        },
+      },{id: "post-gsoc-week-9-pybind11",
         
           title: "Gsoc week 9: pybind11",
         
